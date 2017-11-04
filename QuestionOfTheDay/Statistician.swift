@@ -13,7 +13,7 @@ class Statistician {
         return [0.0]
     }
     func fetchQuestionOfTheDay() -> String{
-        return "Qyestion"
+        return "Question"
     }
     func saveOpinion(){
         
