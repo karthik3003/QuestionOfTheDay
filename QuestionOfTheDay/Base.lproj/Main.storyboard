@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--Statistics-->
         <scene sceneID="sO6-Ff-KY8">
             <objects>
-                <viewController id="eS1-tq-gED" sceneMemberID="viewController">
+                <viewController id="eS1-tq-gED" customClass="StatisticianViewController" customModule="QuestionOfTheDay" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="D7t-jC-kiZ"/>
                         <viewControllerLayoutGuide type="bottom" id="60e-rV-8ju"/>
@@ -79,16 +79,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="J85-Kl-JNr"/>
+                    <tabBarItem key="tabBarItem" title="Statistics" id="J85-Kl-JNr"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7vM-mL-8fh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="764" y="142.57871064467767"/>
         </scene>
-        <!--Item 1-->
+        <!--Vote!-->
         <scene sceneID="6wC-zB-lct">
             <objects>
-                <viewController id="DvO-PI-qjF" sceneMemberID="viewController">
+                <viewController id="DvO-PI-qjF" customClass="VoteViewController" customModule="QuestionOfTheDay" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="b6T-sW-c19"/>
                         <viewControllerLayoutGuide type="bottom" id="P7C-hW-qhv"/>
@@ -137,20 +137,20 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="A"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogl-fA-Xht">
-                                <rect key="frame" x="271" y="216" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="C"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mKc-ma-TYt">
                                 <rect key="frame" x="271" y="179" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="B"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogl-fA-Xht">
+                                <rect key="frame" x="271" y="216" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="C"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="srT-pD-nRZ"/>
+                    <tabBarItem key="tabBarItem" title="Vote!" id="srT-pD-nRZ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XBi-DI-e8B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
