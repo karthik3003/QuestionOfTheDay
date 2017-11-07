@@ -11,7 +11,7 @@
         <!--Statistics-->
         <scene sceneID="sO6-Ff-KY8">
             <objects>
-                <viewController id="eS1-tq-gED" customClass="StatisticianViewController" customModule="QuestionOfTheDay" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="eS1-tq-gED" customClass="StatisticsViewController" customModule="QuestionOfTheDay" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="D7t-jC-kiZ"/>
                         <viewControllerLayoutGuide type="bottom" id="60e-rV-8ju"/>
@@ -80,6 +80,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Statistics" id="J85-Kl-JNr"/>
+                    <connections>
+                        <outlet property="ans0LBL" destination="Cm8-kz-4CK" id="bSv-t0-MRp"/>
+                        <outlet property="ans1LBL" destination="g5q-sJ-3fB" id="Fy5-I1-I20"/>
+                        <outlet property="ans2LBL" destination="Gw1-X9-WIg" id="NEq-o6-7lk"/>
+                        <outlet property="ans3LBL" destination="Gw1-X9-WIg" id="Bwk-WS-vkU"/>
+                        <outlet property="percent0LBL" destination="Zrj-Cc-0X0" id="Ece-gM-Mys"/>
+                        <outlet property="percent1LBL" destination="o1F-VA-Rtl" id="vyL-JL-zCX"/>
+                        <outlet property="percent2LBL" destination="HTH-GE-zjc" id="bkZ-Ew-V6S"/>
+                        <outlet property="questionLBL" destination="DBg-ZW-0ra" id="Fwq-LX-Yny"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7vM-mL-8fh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -136,21 +146,36 @@
                                 <rect key="frame" x="271" y="143" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="A"/>
+                                <connections>
+                                    <action selector="btnA:" destination="DvO-PI-qjF" eventType="touchUpInside" id="5Hx-53-PWD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mKc-ma-TYt">
                                 <rect key="frame" x="271" y="179" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="B"/>
+                                <connections>
+                                    <action selector="btnB:" destination="DvO-PI-qjF" eventType="touchUpInside" id="IAz-nO-5oc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogl-fA-Xht">
                                 <rect key="frame" x="271" y="216" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="C"/>
+                                <connections>
+                                    <action selector="btnC:" destination="DvO-PI-qjF" eventType="touchUpInside" id="M7D-4f-Y2c"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Vote!" id="srT-pD-nRZ"/>
+                    <connections>
+                        <outlet property="answer0LBL" destination="771-b7-UXy" id="86F-Ow-q9d"/>
+                        <outlet property="answer1LBL" destination="MYN-u7-Yjb" id="nzS-7a-RvU"/>
+                        <outlet property="answer2LBL" destination="zx3-cW-Ly2" id="P1Z-AF-aCZ"/>
+                        <outlet property="questionLBL" destination="fXS-I3-Jmv" id="uBL-eE-vbi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XBi-DI-e8B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

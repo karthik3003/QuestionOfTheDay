@@ -6,10 +6,19 @@
 //
 
 import Foundation
+import Foundation
 
-class Opinion {
-    var question:QuestionOfTheDay
-    var answer:Int
-    var objectId:String
+@objcMembers class Opinion: NSObject {
     
+    var answer:Int = 0
+    var objectId:String?
+    
+    override init(){
+        super.init()
+        answer = 0
+    }
+    
+    init(answer:Int){
+        self.answer = answer
+    }
 }

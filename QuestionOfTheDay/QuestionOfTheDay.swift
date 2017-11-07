@@ -7,7 +7,7 @@
 
 import Foundation
 
-class QuestionOfTheDay {
+@objcMembers class QuestionOfTheDay: NSObject {
     var question:String?
     var answer0:String?
     var answer1:String?
@@ -22,10 +22,13 @@ class QuestionOfTheDay {
         self.answer1 = answer1
         self.answer2 = answer2
     }
-    init(){
-        question = "What is my name?"
-        answer0 = "Karthik"
-        answer1 = "Mahesh Babu"
-        answer2 = "Leonardo Decaprio"
+    convenience override init() {
+        self.init(question: "What is my name?", answer0: "Karthik",answer1: "Mahesh Babu", answer2: "Leonardo Decaprio")
     }
+//    init(){
+//        question = "What is my name?"
+//        answer0 = "Karthik"
+//        answer1 = "Mahesh Babu"
+//        answer2 = "Leonardo Decaprio"
+//    }
 }

@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/Guest/Desktop/QuestionOfTheDay/QuestionOfTheDay/Statistician.swift">
+      location = "group:Statistician.swift">
    </FileRef>
    <FileRef
       location = "group:QuestionOfTheDay.xcodeproj">
