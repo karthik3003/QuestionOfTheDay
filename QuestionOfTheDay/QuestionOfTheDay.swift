@@ -13,8 +13,8 @@ import Foundation
     var answer1:String?
     var answer2:String?
     var objectId:String?
-    var create:NSDate?
-    var update:NSDate?
+    var created:NSDate?
+    var updated:NSDate?
     
     init(question:String?, answer0:String?, answer1:String?, answer2:String?) {
         self.question = question
