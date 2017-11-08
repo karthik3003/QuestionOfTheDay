@@ -30,6 +30,7 @@ class StatisticsViewController: UIViewController {
         percent0LBL.text = String(format: "%.2f%%",answer[0])
         percent1LBL.text = String(format: "%.2f%%",answer[1])
         percent2LBL.text = String(format: "%.2f%%",answer[2])
+        
         questionLBL?.text = stats.fetchQuestionOfTheDay().question
         ans0LBL?.text = stats.fetchQuestionOfTheDay().answer0
         ans1LBL?.text = stats.fetchQuestionOfTheDay().answer1
