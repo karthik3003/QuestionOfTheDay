@@ -38,6 +38,17 @@ class StatisticsViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    override func viewWillAppear(_ animated: Bool) {
+        var answer:[Double] = stats.findPercentage()
+        percent0LBL.text = String(format: "%.2f%%",answer[0])
+        percent1LBL.text = String(format: "%.2f%%",answer[1])
+        percent2LBL.text = String(format: "%.2f%%",answer[2])
+        
+        questionLBL?.text = stats.fetchQuestionOfTheDay().question
+        ans0LBL?.text = stats.fetchQuestionOfTheDay().answer0
+        ans1LBL?.text = stats.fetchQuestionOfTheDay().answer1
+        ans2LBL?.text = stats.fetchQuestionOfTheDay().answer2
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
